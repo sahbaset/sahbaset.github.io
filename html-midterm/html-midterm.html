@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Error-Filled Page</title>
+</head>
+<body>
+    <h1>Welcome to My Error-Filled Page</h1>
+    
+    <p>This is a paragraph with mismatched tags and missing closing tags.</p>
+    
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+        <li>Item 9</li>
+        <li>Item 10</li>
+    </ul>
+
+    <p>This is another paragraph without proper indentation.</p>
+    
+    <img src="image.jpg" alt="programmer meme">
+
+    <a href="https://www.example.com" target="_blank">Click me!</a>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>30</td>
+        </tr>
+    </table>
+
+    <img src="error.jpeg" alt="Error Image">
+
+    <p style="text-align: center">This is centered text.</p>
+
+    <p style="background-color: lightgray;">Text</p>
+
+    <input type="button" value="Click me"/>
+
+    <!--This is a closed comment-->
+
+    <a href="#">Link without closing tag</a>
+
+    <p><em><u>Underlined text</u></em></p>
+
+    <dl>
+        <dt>Descriptive Item Title</dt>
+        <dd>Descriptive Item Text</dd>
+    </dl>
+
+    <h2>Errors:</h2>
+
+    <ol>
+    
+        <li>All HTML documents must start with a !DOCTYPE declaration. I added !DOCTYPE html in line 1. </li>
+        <li>html language="en" is incorrect, since "language" is not a valid attribute. I fixed this by changing it to "lang". </li>
+        <li>Moved the HTML lang attribute out of the header. </li>
+        <li>The head tag was missing its closing tag, I added the closing tag to fix this error.</li>
+        <li>The h1 tag for "Welcome to My Error-Filled Page" was not closed, so I closed the tag.</li>
+        <li>The paragraph containing "This is a paragraph with mismatched tags and missing closing tags.", was missing the opening tag for the paragraph and I fixed this error by adding the opening tag.</li>
+        <li>The list is opened by an ol tag, but closes with a ul tag. Given that the list already has numbers it wouldn't make sense to number the contents twice, so I replaced the ol opening tag with ul to make bullet points. </li>
+        <li>The paragraph containing "This is another paragraph without proper indentation." is not opened using the p tag, I fixed this error by adding the p tag.</li>
+        <li>For image.jpeg, they did not provide any alt text in the event the image fails to load. I fixed this by adding in the alt attribute.</li>
+        <li>The hyperlink closes with img instead of closing with the correct tag. I fixed this by closing with the 'a' element</li>
+        <li>In the table, where John's age is displayed, the td tag is missing the backslash that would make it close. This was corrected by adding in the backslash and closing the td element. </li>
+        <li>Table is missing its closing tag, fixed this by adding a closing tag at the end of the table.</li>
+        <li>The second image uses source when it should be src. I fixed this by replacing source with src. </li>
+        <li>The text was centered incorrectly by using attributes that are invalid in HTML 5. I fixed this by using opening and closing p tags, and by utilizing css to center the text, style = "text-align: center"</li>
+        <li>'bgcolor' is not valid in HTML 5. I fixed this using style="background-color: lightgray;" </li>
+        <li>The comment was unclosed, I added the proper closing tags to the end. </li>
+        <li>The link that takes you to the top of the page is missing a closing tag, I fixed this by adding the a closing tag. </li>
+        <li>The text intended to be underlined has em tags, but they are not properly nested and closed. I fixed this by moving the em closing tag before the p closing tag.</li>
+        <li>The text meant to be underlined is only emphasized, so I added the u attribute to underline it. </li>
+        <li>Since there is a description list, using li is not valid. I fixed this by using dt for the title, and dd for the item text. </li>
+      </ol>
+
+</body>
+</html>
