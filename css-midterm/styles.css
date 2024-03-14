@@ -1,0 +1,105 @@
+body {
+    font-family: "Montserrat", sans-serif; 
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    background-color: #ececec;
+    text-align: center; 
+}
+
+header {
+    position: relative;
+    overflow: hidden;
+    font-family: "Abril Fatface", serif; 
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 10%; 
+    transform: translateY(-50%);
+    text-align: left; 
+    color: #fff;
+    z-index: 2; 
+}
+
+.event {
+    background-color: #fff;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Montserrat", sans-serif;
+}
+
+.date {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.description {
+    color: #555;
+    line-height: 1.6;
+}
+
+@media only screen and (min-width: 768px) {
+    .event {
+        width: 70%;
+        margin: 20px auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .event {
+        width: 50%;
+    }
+}
+
+.artist {
+    text-align: center;
+}
+
+.artist img {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.details {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.details {
+    margin-top: 20px;
+}
+
+.details p {
+    color: #555;
+    margin: 5px 0;
+}
+
+.footer {
+    text-align: left; 
+}
