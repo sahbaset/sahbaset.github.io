@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.aboreto-regular {
+    font-family: "Aboreto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.alumni-sans-pinstripe {
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #0a0908; /*bg color*/}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-image {
+    background-image: url('image1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.header-image h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.description {
+    padding: 50px;
+    padding-bottom: 45px;
+    border-bottom: 2px double #22333b;
+    border-top: 2px double #22333b;
+
+    color: #eae0d5; 
+}
+
+
+.upcoming-events {
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.upcoming-events h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #eae0d5
+}
+
+.event-cards {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.event-card {
+    width: 100%; /* Changed width to 100% */
+    background: linear-gradient(45deg, #0a0908, #0f2525); /* Gradient background */
+    border: 1px solid #7f5539;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    color: #eae0d5;
+}
+
+
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #5e503f;
+    
+}
+
+.event-info {
+    padding: 15px;
+    color: #eae0d5
+
+}
+
+.event-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #eae0d5
+}
+
+
+.event-card .details-box {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+details,
+details p {
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+}
+.event-info p {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #555;
+    color: #eae0d5
+
+}
+
+summary {
+    cursor: pointer;
+    background-color: #005f73;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #22333b;
+}
+
+#back-to-top {
+    text-decoration: none;
+    color: #eae0d5;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#back-to-top:hover {
+    text-decoration: underline;
+}
+
+
