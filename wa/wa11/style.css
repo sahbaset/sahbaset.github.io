@@ -1,0 +1,64 @@
+h1 {
+    font-family: 'Comfortaa', sans-serif;
+  color: #333; /* Change the font color */
+  text-align: center;
+}
+
+body {
+  font-family: 'Comfortaa', sans-serif;
+  width: 640px;
+  margin: 0 auto;
+  background-color: #e3d5ca; 
+  color: #333;
+}
+
+.displayed-img {
+  max-width: 100%;
+  max-height: 100vh;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* Add drop shadow */
+}
+
+
+.full-img {
+  position: relative;
+  display: block;
+  width: 640px;
+  height: 480px;
+  margin-bottom: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-color: rgba(0,0,0,0);
+}
+
+button {
+  border: 0;
+  background: rgba(150,150,150,0.6);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  border: 1px solid #999;
+  position: absolute;
+  cursor: pointer;
+  top: 2px;
+  left: 2px;
+  font-family: Arial, sans-serif; 
+  color: #ffffff;
+}
+
+.thumb-bar img {
+  display: block;
+  width: 20%;
+  float: left;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* Add drop shadow */
+  transition: transform 0.5s ease; 
+}
+
+.thumb-bar img:hover {
+  transform: scale(1.2);
+}
+
