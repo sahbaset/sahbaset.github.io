@@ -1,4 +1,4 @@
-let volume = 50; // Starting volume
+let volume = 50;
 let clickCount = 0;
 let lastClickTime = 0;
 
@@ -21,10 +21,10 @@ function animateButton(button) {
         button.style.transform = `translate(${moveX}px, ${moveY}px)`;
 
         setInterval(() => {
-            volumeSlider.value = Math.floor(Math.random() * 201) - 100; // Set slider value to a random position between -100 and 100
-            volume = parseFloat(volumeSlider.value) >= 0 ? parseFloat(volumeSlider.value) : 0; // Ensure volume is not negative
-            updateVolumeDisplay();
-        }, 3000); // Update every 3 seconds
+            moveX = (Math.random() * maxMove * 2) - maxMove;
+            moveY = (Math.random() * maxMove * 2) - maxMove;
+            button.style.transform = `translate(${moveX}px, ${moveY}px)`;
+        }, 500); 
     }, 500); 
 }
 
